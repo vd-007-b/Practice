@@ -1,5 +1,16 @@
 
 
+
+
+
+
+
+
+
+
+https://azeemafirdous2005.github.io/SE-LAB-PDFS/
+
+
 week- 5 Docker 
 docker pull redis
 
@@ -48,3 +59,4 @@ docker compose -f docker-compose.yaml up -d
 docker compose down
 docker compose up --scale db=2 -d
 docker network ls
+
