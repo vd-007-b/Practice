@@ -60,3 +60,32 @@ docker compose down
 docker compose up --scale db=2 -d
 docker network ls
 
+
+
+
+
+week-10 Minikube
+Minikube start --driver=docker
+minikube kubectl -- get pods -A
+
+minikube start
+kubectl create deployement mynginx --image=nginx
+kubectl get deployements
+kubectl expose deployement mynginx --type=NodePort --port=80 --target-port=80
+kubectl scale deployement mynginx --replicas=4
+kubectl get servce myngnix
+kubectl port-forword svc/myngnix 8081:80
+
+
+delete
+kubectl delete deployement myngnix
+kubectl delete service myngnix
+
+nagios
+docker pull jasonrivers/nagios:latest
+docker run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
+ localhost:8888
+nagiosadmin
+nagios
+
+
